@@ -1,4 +1,89 @@
-@media screen and (min-width: 480px) {
+
+
+@media screen and (min-width:0px) and (max-width: 399px){
+
+
+ #logo2 {
+    float: left;
+    margin-left: 0%;
+    margin-top: 10%;
+    text-align: left;
+    width: 15%;
+    padding: 0 0 0 20px;
+    
+  }
+
+ header {
+ 
+  margin: 0 0 0px 0;
+  padding:0;
+
+
+}
+
+ #logo {
+
+
+ }
+
+ h1 {
+    font-size: 1.0em;
+  }
+  
+  
+  h2 {
+    
+    font-size: 0.75em;
+    margin-bottom: 0px;
+    
+  }
+
+  nav{
+    font-size: 0.70em;
+    
+
+  }
+
+  h3{
+
+  font-size: 1.25em;  
+  font-weight: bold;
+
+  }
+
+  /********************************
+   PAGE: DINOSAURS
+  **********************************/
+   
+  #profiles li {
+    width: 100%;
+  }
+
+
+
+}
+
+
+
+/***************************************************************************************************/
+
+
+@media screen and (min-width: 400px) and (max-width:659px) {
+
+
+
+ h1 {
+    font-size: 1.25em;
+  }
+  
+  
+  h2 {
+    
+    font-size: 1em;
+    margin-bottom: 10px;
+    
+  }
+
   
   
   /********************************
@@ -23,18 +108,18 @@
   **********************************/
   
   /********************************
-   PAGE: P0RTFOLIO
+   PAGE: DINOSAURS
   **********************************/
-  
-  #profiles li {
-    width: 28.3333%;
+
+ #profiles li {
+    width: 45%;
   }
-  
-  #profiles li:nth-child(3n + 1) {
+ /* 
+  #profiles li:nth-child(2n + 1) {
     clear: left;
     
   }
-    
+    */
   
   /********************************
    PAGE: ABOUT
@@ -49,6 +134,9 @@
 }
 
 
+/***************************************************************************************************/
+
+
 
 @media screen and (min-width: 660px) {
  
@@ -57,34 +145,27 @@
    HEADER
   **********************************/
   
-  nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
+  /*nav {
+   background: #000;
+    float: center;
+    
     margin-right: 5%;
-    text-align: right;
-    width: 45%;
-  }
+    text-align: center;
+    width: 100%;
+    
+  }*/
   
-  #logo,#logo2 {
-    float: left;
+/* #logo{
+    float: center;
     margin-left: 5%;
-    text-align: left;
-    width: 45%;
+    text-align: center;
+    width: 5%;
     
-  }
+  }*/
   
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  
-  h2 {
-    
-    font-size: 0.825em;
-    margin-bottom: 20px;
-    
-  }
+
+
+ 
   
   
   header {
@@ -93,4 +174,20 @@
     */
   }
   
+
+
+/********************************
+   PAGE: DINOSAURS
+  **********************************/
+  
+  /*#profiles li {
+    width: 28.3333%;
+  }
+  
+  #profiles li:nth-child(3n + 1) {
+    clear: left;
+    
+  }*/
+
+
 }
