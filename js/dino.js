@@ -5,13 +5,16 @@
 var $overlay = $('<div id="overlay"></div>');
 //var $profiles = ("#profiles");
 var $image = $("<img>");
-var $caption = $("<p></p>")
+var $caption = $("<p></p>");
+var $profileLink = $("<a></a>");
 
 //An image to overlay
 $overlay.append($image);
 
 //A catpion to overlay
 $overlay.append($caption);
+
+$overlay.append($profileLink);
 
 // Add overlay
 $("body").append($overlay);
@@ -31,8 +34,12 @@ var imageLocation =  $(this).attr("href");
     $overlay.show();
 
   //Get child's alt attribute and set caption
- var captionText= $(this).children("img").attr("alt");
+  var captionText= $(this).children("img").attr("alt");
   $caption.text(captionText);
+
+  var pLink = $(this).attr("href2");
+
+  $profileLink.attr("href2",pLink);
 });
 
 
