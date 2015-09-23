@@ -1,0 +1,145 @@
+
+
+@media (max-width: 450px){
+
+
+ 
+  /********************************
+   PAGE: DINOSAURS
+  **********************************/
+   
+  #profiles li {
+    width: 100%;
+  }
+
+
+
+}
+
+
+
+/***************************************************************************************************/
+
+
+@media (max-width:768px) {
+
+
+
+ #logo2 {
+    float: left;
+    margin-left: 0%;
+    margin-top: 3%;
+    text-align: left;
+    width: 25%;
+    padding: 0 0 0 20px;
+    
+  }
+
+ .navbar {
+ 
+  margin: 0 0 0px 0;
+  padding:0;
+  border-color: #000;
+  border-bottom-width: 10px;
+
+
+}
+
+ #logo {
+
+    display: none;
+
+ }
+
+ /*h1 {
+    font-size: .75em;
+  }
+  
+  
+  h2 {
+
+    font-size: 0.50em;
+    margin-bottom: 0px;
+    
+  }*/
+
+  .navbar-collapse{
+    font-size: 0.70em;
+    
+
+  }
+
+  h3{
+
+  font-size: 1.25em;  
+  font-weight: bold;
+
+  }
+
+  button.navbar-toggle{
+
+  margin-top: 3%;
+  height: 50%;
+
+
+  background-color: #000;
+
+
+
+}
+
+
+
+
+  
+  /********************************
+   TWO COLUMN LAYOUT
+  **********************************/
+  
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  
+  #secondary {
+    width: 40%;
+    float: right;    
+  }
+  
+  
+  /********************************
+   3 * 5 = 15
+  100% - 15% = 85%
+  85/3 = 28.33333
+  **********************************/
+  
+  /********************************
+   PAGE: DINOSAURS
+  **********************************/
+
+ #profiles li {
+    width: 45%;
+  }
+ /* 
+  #profiles li:nth-child(2n + 1) {
+    clear: left;
+    
+  }
+    */
+  
+  /********************************
+   PAGE: ABOUT
+  **********************************/
+  
+  .profile-photo {
+    float: left;
+    margin: 0 5% 80px 0;
+  }
+  
+    
+}
+
+
+/***************************************************************************************************/
+
+
