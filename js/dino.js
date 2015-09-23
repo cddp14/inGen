@@ -6,7 +6,10 @@ var $overlay = $('<div id="overlay"></div>');
 //var $profiles = ("#profiles");
 var $image = $("<img>");
 var $caption = $("<p></p>");
-var $profileLink = $("<a></a>");
+
+var $close =$("<button>Close</button>");
+var $profileLink =$("<button>See Profile</button>");
+
 
 //An image to overlay
 $overlay.append($image);
@@ -14,41 +17,73 @@ $overlay.append($image);
 //A catpion to overlay
 $overlay.append($caption);
 
+//An close button to overlay
+$overlay.append($close);
+
+//Append  profile link to button
 $overlay.append($profileLink);
 
 // Add overlay
 $("body").append($overlay);
 
+
+
+//$overlay.append("button");
+
 //Hide popups
-$("#popup").hide();
+//$("button").hide();
+// $(".close").hide();
   
   
 //Capture theclick event on a link to an immage
-$("#profiles a").hover(function(event){
+$("#profiles a").click(function(event){
   event.preventDefault();
 var imageLocation =  $(this).attr("href");
 //Update overlay with the image linked in the link 
   $image.attr("src",imageLocation);
-  
+
+   // var closeButton = $(this).children("button").attr("href");
+   // $close.attr("src",closeButton);
+
+
   //Show overlay
     $overlay.show();
+    //("button").show();
+
 
   //Get child's alt attribute and set caption
   var captionText= $(this).children("img").attr("alt");
   $caption.text(captionText);
 
-  var pLink = $(this).attr("href2");
+  // var closeButton = $(this).children("button");
+  // $close.button(closeButton);
 
-  $profileLink.attr("href2",pLink);
+  
 });
 
 
 // When mouse leaves overlay
-$overlay.mouseleave(function(){
+$close.click(function(){
   //hide overlay image
   $overlay.hide();
 
 });
+
+
+// When mouse leaves overlay
+$profileLink.click(function(){
+  //hide overlay image
+  $overlay.hide();
+
+//Update overlay with the image linked in the link 
+  
+
+  
+
+
+});
+
+
 
 
 //Capture the click event on a link to an immage

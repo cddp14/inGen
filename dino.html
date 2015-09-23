@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
     <title>InGen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">      
-	  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link  href="css/main.css" rel="stylesheet">	
-    <link  href="css/responsive.css" rel="stylesheet" media="screen">
-	</head>
-	<body> 
+    <link  href="css/pratice.css" rel="stylesheet"> 
+    <link  href="css/res_prac.css" rel="stylesheet" media="screen">
+  </head>
+  <body> 
   
-  	  <header>
-  		  <img id="logo2" src="img/W_Other_Images/inGen.jpeg" alt="Company Logo">
-  	    <a href="index.html" id="logo">
-  		   <h1>International Genetics Technology</h1>
-  		   <h2>Tomorrow, Today</h2>		   
-  		  </a>
-       
-  		  <nav >
+      <header class="navbar navbar-default ">
+      <img id="logo2" src="img/W_Other_Images/inGen.jpeg" alt="Company Logo">
+        <a href="index.html" id="logo">
+         <h1>International Genetics Technologies</h1>
+         <h2>Tomorrow, Today</h2>      
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <nav class="collapse navbar-collapse">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="selected">Home</a></li>
             <li><a href="about.html">About</a></li>
-    	      <li><a href="dino.html" class="selected">Dinosaurs</a></li>	
-    	      <li><a href="science.html">The Science</a></li> 	
+          <li><a href="dino.html" >Dinosaurs</a></li> 
+          <li><a href="science.html">The Science</a></li>   
             <li><a href="contact.html">Contact Us</a></li>
-    	      <li><a href="employ.html">Employment</a></li>	
+          <li><a href="employ.html">Employment</a></li> 
           </ul>
         </nav>
-  	  </header>
-   
-
+      </header>
+      
     <div class="container">
 	    <h3>Dinosaurs Profiles</h3>	
 	     <!-- <div id="wrapper"> -->
 	       <!-- <section> -->
-           	<ul id ="profiles">
+           	<ul id="profiles">
               <li>
-              	<a href="img/Brachio/brachioIcon.png">
-                  <img src="img/Brachio/brachioIcon.png" alt="A picture">
-                </a> 
+              	<a href="img/Brachio/brachio.jpeg">
+                     
+                  <img src="img/Brachio/brachioIcon.png" alt="Brachiosaurus">
+                 
+                </a>  
+                
+
+                
               </li>
 		 
         		  <li>
-              	<a href="img/Dilopho/dilophoIcon.png">
-                  <img src="img/Dilopho/dilophoIcon.png" alt="A picture">
+              	<a href="img/Dilopho/diloph2.jpeg">
+                  <img src="img/Dilopho/dilophoIcon.png" alt="Dilophosaurus">
                 </a> 
               </li>
 		 
 		          <li>
-              	<a href="img/Galli/galliIcon.png">
-                  <img src="img/Galli/galliIcon.png" alt="A picture">
+              	<a href="img/Galli/galli.jpeg">
+                  <img src="img/Galli/galliIcon.png" alt="Gallimimus">
                 </a> 
               </li>
 		  
@@ -61,15 +72,15 @@
 		  
                   
 		          <li>
-              	<a href="img/Compy/compyIcon.png">
-                  <img src="img/Compy/compyIcon.png" alt="A picture">
+              	<a href="img/Compy/compy.jpeg">
+                  <img src="img/Compy/compyIcon.png" alt="Compsognathus">
                 </a> 
               </li>
 
 		   
 		          <li>
               	<a href="img/Ptera/pteraIcon.png">
-                  <img src="img/Ptera/pteraIcon.png" alt="A picture">
+                  <img src="img/Ptera/pteraIcon.png" alt="Pteranodon">
                 </a> 
               </li>
 
@@ -82,10 +93,10 @@
 
 		  
           		<li>
-                <a href="img/Trex/headshot.jpeg"  >
+                <a href="img/Trex/trex2.jpeg">
                   <img src="img/Trex/TrexIcon2.png" alt="A picture" >
                 </a> 
-          			<a href="trex.html">Trex</a>
+          			
               </li>
 
 		 
@@ -101,7 +112,7 @@
       </div>
 	    
       <script src="http://code.jquery.com/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>	
-	    <script src="js/dino.js" type="text/javascript"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/dino.js" type="text/javascript"></script>
 	</body>
 </html>

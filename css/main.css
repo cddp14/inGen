@@ -180,7 +180,7 @@ DINO PROFILES
 
 
 #overlay {
-  background: rgba(0,0,0,0.70);
+  background: rgba(0,0,0,.95);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -195,6 +195,7 @@ DINO PROFILES
 
 #overlay img{
   margin-top: 10%;
+  
   
 }
 
