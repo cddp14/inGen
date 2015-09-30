@@ -27,6 +27,10 @@ img {
   
 }
 
+p{
+  font-size: 1.15em;
+}
+
 
 /* Jumbotron
 ================================ */
@@ -79,7 +83,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.25em;
   margin: -5px 0 0;
   font-weight: normal;
 }

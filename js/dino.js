@@ -3,7 +3,6 @@
 //Solution:  Create an overlay with the large image - Lightbox
 
 var $overlay = $('<div id="overlay"></div>');
-var $dinoOverlay = $('<div id="dinoOverlay"></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
 
@@ -29,16 +28,6 @@ $overlay.append($profileLink);
 // Add overlay
 $("body").append($overlay);
 
-$("body").append($dinoOverlay);
-
-//$overlay.append($theProfile);
-
-
-//$overlay.append("button");
-
-//Hide popups
-//$("button").hide();
-// $(".close").hide();
   
   
 //Capture theclick event on a link to an immage
@@ -48,20 +37,15 @@ var imageLocation =  $(this).attr("href");
 //Update overlay with the image linked in the link 
   $image.attr("src",imageLocation);
 
-   
-  //Show overlay
+     //Show overlay
     $overlay.show();
     
 
-
   //Get child's alt attribute and set caption
   var captionText= $(this).children("img").attr("alt");
-
   $caption.text(captionText);
 
-  link =  $(this).children("img").attr("href"); 
-  //$theProfile.(link);
-
+link =  $(this).children("img").attr("href"); 
 
   
 });
@@ -77,12 +61,10 @@ $close.click(function(){
 
 // When clicking the See profile button
 $profileLink.click(function(){
-  //hide overlay image
- $//dinoOverlay.show();
-  //$overlay.hide();
-  //$dinoOverlay.show();
+  
+//load profile page
  $("body").load(link);
- // var link = $(this).attr('alt');
+ 
   
 
 });
@@ -97,8 +79,8 @@ $profileLink.click(function(){
 //   if(xhr.readyState ===4){
 //      var dinosaur = JSON.parse(xhr.responseText);
 //      for(i=0; i<dinosaur.length; i++){
-//       if(dinosaur[i].name === link){
-
+//       if(dinosaur[i].name === captionText){
+//          link = dinosaur[i].link;
 //       }
 
 
