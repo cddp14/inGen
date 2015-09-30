@@ -3,12 +3,15 @@
 //Solution:  Create an overlay with the large image - Lightbox
 
 var $overlay = $('<div id="overlay"></div>');
-//var $profiles = ("#profiles");
+var $dinoOverlay = $('<div id="dinoOverlay"></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
 
 var $close =$("<button>Close</button>");
 var $profileLink =$("<button>See Profile</button>");
+
+var $theProfile =$("<a></a>");
+var link;
 
 
 //An image to overlay
@@ -26,6 +29,9 @@ $overlay.append($profileLink);
 // Add overlay
 $("body").append($overlay);
 
+$("body").append($dinoOverlay);
+
+//$overlay.append($theProfile);
 
 
 //$overlay.append("button");
@@ -42,27 +48,26 @@ var imageLocation =  $(this).attr("href");
 //Update overlay with the image linked in the link 
   $image.attr("src",imageLocation);
 
-   // var closeButton = $(this).children("button").attr("href");
-   // $close.attr("src",closeButton);
-
-
+   
   //Show overlay
     $overlay.show();
-    //("button").show();
+    
 
 
   //Get child's alt attribute and set caption
   var captionText= $(this).children("img").attr("alt");
+
   $caption.text(captionText);
 
-  // var closeButton = $(this).children("button");
-  // $close.button(closeButton);
+  link =  $(this).children("img").attr("href"); 
+  //$theProfile.(link);
+
 
   
 });
 
 
-// When mouse leaves overlay
+// Click the close button
 $close.click(function(){
   //hide overlay image
   $overlay.hide();
@@ -70,22 +75,55 @@ $close.click(function(){
 });
 
 
-// When mouse leaves overlay
+// When clicking the See profile button
 $profileLink.click(function(){
   //hide overlay image
-  $overlay.hide();
-
-//Update overlay with the image linked in the link 
+ $//dinoOverlay.show();
+  //$overlay.hide();
+  //$dinoOverlay.show();
+ $("body").load(link);
+ // var link = $(this).attr('alt');
   
-
-  
-
 
 });
 
+//**************************************************************************************************
+
+// // 1. Create XML object
+// var xhr = new XMLHttpRequest();
+
+// //2. Call back function
+// xhr.onreadystatechange = function(){
+//   if(xhr.readyState ===4){
+//      var dinosaur = JSON.parse(xhr.responseText);
+//      for(i=0; i<dinosaur.length; i++){
+//       if(dinosaur[i].name === link){
+
+//       }
+
+
+//      }
+//    }
+    
+// };
+
+// //3. Opening a request
+// xhr.open('GET', 'dino.json');
+
+// //4. Send request
+// xhr.send();
 
 
 
+
+
+
+
+
+
+
+
+//***************************************************************************************************
 //Capture the click event on a link to an immage
 //$overlay.click(function(){
   //event.preventDefault();
